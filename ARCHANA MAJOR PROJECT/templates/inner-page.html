@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Price Prediction</title>
+    <style>
+        body {
+            background-color: #f5f5f5; /* Light ash shade */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: transparent; /* Remove black background */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            float: right; /* Align navigation to the right */
+            background-color: transparent; /* Remove black background */
+            box-sizing: border-box;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+        }
+        main {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: black;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #333; /* Line below header */
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        label {
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        input {
+            width: 100%;
+        }
+        button {
+            background-color: #f43232;
+            color: rgb(244, 239, 239);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Camera Price Prediction</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Enter your Details for Camera Price prediction</h2>
+        <form action="/submit" method="post",>
+            <label>
+                Max resolution:
+                <input type="number" value="4068.0">
+            </label>
+            <label>
+                Low resolution:
+                <input type="number" value="640">
+            </label>
+            <label>
+                Effective pixels:
+                <input type="number" value="5">
+            </label>
+            <label>
+                Zoom wide (W):
+                <input type="number" value="42">
+            </label>
+            <label>
+                Zoom tele (T):
+                <input type="number" value="114.0">
+            </label>
+            <label>
+                Normal focus range:
+                <input type="number" value="70.0">
+            </label>
+            <label>
+                Macro focus range:
+                <input type="number" value="20.5">
+            </label>
+            
+            <label>
+                Weight (inc. batteries):
+                <input type="number" value="420.0">
+            </label>
+            <label>
+                Dimensions:
+                <input type="number" value="150.0">
+            </label>
+            <label>
+                Storage included:
+                <input type="text" id="storageInput" placeholder="Enter storage">
+            </label>
+            <button type="submit"><a href="/output">Submit</a></button>
+            
+        </form>
+        <div id="prediction"></div>
+    </main>
+    
+</body>
+</html>
