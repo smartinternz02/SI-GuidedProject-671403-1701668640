@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="total">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="#" id="micro-bar">AeroChoice</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" id="navItem1" href="#">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-link" id="navItem2" href="#introductionSection">Dropdown⏑</a>
+                        <a class="nav-link" id="navItem3" href="#oursevicesSection">Services</a>
+                        <a class="nav-link" id="navItem3" href="#oursevicesSection">About</a>
+                        <a class="nav-link" id="navItem3" href="#oursevicesSection">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="banner-section-bg-container">
+            <div class="text-center">
+                <h1 class="banner-heading mt-5 mb-5" id="bannerHeading">Let's Enjoy Your Flight Trip With <span id="airlineNamePlaceholder">.....</span></h1>
+            </div>
+        </div>
+        <div class="off p-3">
+            <div class="wcu-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="wcu-card mb-3">
+                                <input type="text" id="airlineName" class="todo-user-input" placeholder="Airline Name" list="airlines" required />
+                                <datalist id="airlines">
+                                    <option value="Qatar Airways">
+                                    <option value="Emirates">
+                                    <option value="Singapore Airlines">
+                                    <option value="Cathey Pacific">
+                                    <option value="British Airways">
+                                    </datalist>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="wcu-card mb-3">
+                                <input type="text" id="seatType" class="todo-user-input" placeholder="Seat Type" list="class"required />
+                                <datalist id="class"
+                                    <option value="None">
+                                    <option value="Business Class">
+                                    <option value="First Class">
+                                    <option value="Economy Class">
+                                    <option value="Premium  Economy Class">
+                                    <option value="Premium First Class">
+                                    </datalist>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="wcu-card  mb-3">
+                                <input type="text" id="travellerType" class="todo-user-input" placeholder="Type of Traveller" list="traveller" required />
+                                <datalist id="traveller">
+                                    <option value="Solo Leisure">
+                                    <option value="Couple Leisure">
+                                    <option value="Family Leisure">
+                                    <option value="Group Leisure">
+                                    <option value="Business Traveller">
+                                    </datalist>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="wcu-card  mb-3">
+                                <input type="text" id="origin" class="todo-user-input" placeholder="Origin" required />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="wcu-card  mb-3">
+                                <input type="text" id="destination" class="todo-user-input" placeholder="Destination" required />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="wcu-card mb-3">
+                                <input type="text" id="monthFlown" class="todo-user-input" placeholder="Month Flown" list="months" required />
+<datalist id="months">
+    <option value="January">
+    <option value="February">
+    <option value="March">
+    <option value="April">
+    <option value="May">
+    <option value="June">
+    <option value="July">
+    <option value="August">
+    <option value="September">
+    <option value="October">
+    <option value="November">
+    <option value="December">
+</datalist>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12 col-md-6">
+                            <div class="wcu-card mb-3">
+                                <input type="text" id="yearFlown" class="todo-user-input1" placeholder="Year flown" list="years" required />
+                                <datalist id="years">
+                                    <option value="2024">
+                                    <option value="2023">
+                                    <option value="2022">
+                                    <option value="2021">
+                                    <option value="2020">
+                                    <option value="2019">
+                                    <option value="2018">
+                                    <option value="2017">
+                                    <option value="2016">
+                                    <option value="2015">
+                                </datalist>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="wcu-card mb-3">
+                                <input type="text" id="verified" class="todo-user-input1" placeholder="Verified YES/NO" list="yesno" required />
+                                <datalist id="yesno">
+                                    <option value="YES">
+                                    <option value="NO">
+                                </datalist>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <h1 class="seat-heading">Seat_Comfort</h1>
+                            <div class="d-flex flex-row content-center">
+                                <form action="#">
+                                    <div class="rating">
+                                        <input type="checkbox" id="star5_seat" name="rating_seat" value="5">
+                                        <label for="star5_seat">☆</label>
+                                        <input type="checkbox" id="star4_seat" name="rating_seat" value="4">
+                                        <label for="star4_seat">☆</label>
+                                        <input type="checkbox" id="star3_seat" name="rating_seat" value="3">
+                                        <label for="star3_seat">☆</label>
+                                        <input type="checkbox" id="star2_seat" name="rating_seat" value="2">
+                                        <label for="star2_seat">☆</label>
+                                        <input type="checkbox" id="star1_seat" name="rating_seat" value="1">
+                                        <label for="star1_seat">☆</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-3">
+                            <h1 class="food-heading">Food_Beverages</h1>
+                            <div class="d-flex flex-row content-center">
+                                <form action="#">
+                                    <div class="rating">
+                                        <input type="checkbox" id="star5_food" name="rating_food" value="5">
+                                        <label for="star5_food">☆</label>
+                                        <input type="checkbox" id="star4_food" name="rating_food" value="4">
+                                        <label for="star4_food">☆</label>
+                                        <input type="checkbox" id="star3_food" name="rating_food" value="3">
+                                        <label for="star3_food">☆</label>
+                                        <input type="checkbox" id="star2_food" name="rating_food" value="2">
+                                        <label for="star2_food">☆</label>
+                                        <input type="checkbox" id="star1_food" name="rating_food" value="1">
+                                        <label for="star1_food">☆</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-3">
+                            <h1 class="ground-heading">Ground_Service</h1>
+                            <div class="d-flex flex-row content-center">
+                                <form action="#">
+                                    <div class="rating">
+                                        <input type="checkbox" id="star5_ground" name="rating_ground" value="5">
+                                        <label for="star5_ground">☆</label>
+                                        <input type="checkbox" id="star4_ground" name="rating_ground" value="4">
+                                        <label for="star4_ground">☆</label>
+                                        <input type="checkbox" id="star3_ground" name="rating_ground" value="3">
+                                        <label for="star3_ground">☆</label>
+                                        <input type="checkbox" id="star2_ground" name="rating_ground" value="2">
+                                        <label for="star2_ground">☆</label>
+                                        <input type="checkbox" id="star1_ground" name="rating_ground" value="1">
+                                        <label for="star1_ground">☆</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-3">
+                            <h1 class="overall-heading">Overall_Rating</h1>
+                            <div class="d-flex flex-row content-center">
+                                <form action="#">
+                                    <div class="rating">
+                                        <input type="checkbox" id="star5_overall" name="rating_overall" value="10">
+                                        <label for="star5_overall">☆</label>
+                                        <input type="checkbox" id="star4_overall" name="rating_overall" value="9">
+                                        <label for="star4_overall">☆</label>
+                                        <input type="checkbox" id="star3_overall" name="rating_overall" value="8">
+                                        <label for="star3_overall">☆</label>
+                                        <input type="checkbox" id="star2_overall" name="rating_overall" value="7">
+                                        <label for="star2_overall">☆</label>
+                                        <input type="checkbox" id="star1_overall" name="rating_overall" value="6">
+                                        <label for="star1_overall">☆</label>
+                                        <input type="checkbox" id="star5_overall" name="rating_overall" value="5">
+                                        <label for="star5_overall">☆</label>
+                                        <input type="checkbox" id="star4_overall" name="rating_overall" value="4">
+                                        <label for="star4_overall">☆</label>
+                                        <input type="checkbox" id="star3_overall" name="rating_overall" value="3">
+                                        <label for="star3_overall">☆</label>
+                                        <input type="checkbox" id="star2_overall" name="rating_overall" value="2">
+                                        <label for="star2_overall">☆</label>
+                                        <input type="checkbox" id="star1_overall" name="rating_overall" value="1">
+                                        <label for="star1_overall">☆</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center">
+                        <button id="checkNowBtn" class="button">Check Now</button>
+                        <div class="box">
+                            <input type="checkbox" />
+                            <label for="myCheckbox">Save this choice</label>
+                        </div>
+                    </div>
+                    <div id="recommendationMessage" class="col-12 col-md-6 recommendation-message"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    
+
+        
+        // Array of airline names
+        var airlineNames = ["Qatar Airways", "Emirates", "Singapore Airlines", "Cathay Pacific", "British Airways"];
+        var currentIndex = 0;
+
+        // Function to simulate typing effect
+        function typeWriter(text, i, span) {
+            if (i < text.length) {
+                span.textContent += text.charAt(i);
+                i++;
+                setTimeout(function () { typeWriter(text, i, span); }, 100); // Adjust typing speed here (in milliseconds)
+            }
+        }
+
+        // Function to update the airline name dynamically
+        function updateAirlineName() {
+            var airlineNamePlaceholder = document.getElementById("airlineNamePlaceholder");
+            var currentAirlineName = airlineNames[currentIndex];
+
+            // Clear existing text content
+            airlineNamePlaceholder.textContent = "";
+
+            // Call the typing effect function
+            typeWriter(currentAirlineName, 0, airlineNamePlaceholder);
+
+            // Update the index for the next airline name
+            currentIndex = (currentIndex + 1) % airlineNames.length;
+        }
+
+        // Call the updateAirlineName function every 5 seconds (adjust as needed)
+        setInterval(updateAirlineName, 2000); // 5000 milliseconds = 5 seconds
+
+
+
+        document.getElementById("checkNowBtn").addEventListener("click", function() {
+            // Get the values of all required fields
+            var airlineName = document.getElementById("airlineName").value.trim();
+            var seatType = document.getElementById("seatType").value.trim();
+            var travellerType = document.getElementById("travellerType").value.trim();
+            var origin = document.getElementById("origin").value.trim();
+            var destination = document.getElementById("destination").value.trim();
+            var monthFlown = document.getElementById("monthFlown").value.trim();
+            var yearFlown = document.getElementById("yearFlown").value.trim();
+            var verified = document.getElementById("verified").value.trim();
+
+            // Check if any required field is empty
+            if (!airlineName || !seatType || !travellerType || !origin || !destination || !monthFlown || !yearFlown || !verified) {
+                alert("Please fill in all required fields.");
+                return;
+            }
+
+            // Get the overall rating value
+            var overallRating = parseInt(document.querySelector('input[name="rating_overall"]:checked').value);
+
+            // Check if overall rating is 3,4 or 5
+            if (overallRating >= 5) {
+                document.getElementById("recommendationMessage").textContent = "Recommended";
+            } else {
+                document.getElementById("recommendationMessage").textContent = "Not Recommended";
+            }
+        });
+    </script>
+</body>
+
+</html>
